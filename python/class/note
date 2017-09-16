@@ -1,0 +1,221 @@
+python中静态方法，类方法，实例方法
+静态方法只有自己参数，类方法包含类的参数，实例方法包含实例参数，三种方法可以看作是python中定义在类中的对象，只是参数不一样
+python中的函数就是一个实例对象，
+
+class People:
+    def __init__(self):
+        print 'init'
+
+    def testObjectMethod(self):
+        print 'eat'
+
+    @classmethod
+    def testClassMethod(cls):
+        print 'testClassMethod'
+
+    @staticmethod
+    def testStaticMethod():
+        print 'testStaticMethod'
+test = People()
+
+print People.testObjectMethod
+print test.testObjectMethod
+
+print People.testClassMethod
+print test.testClassMethod
+
+print People.testStaticMethod
+print test.testStaticMethod
+
+打印结果：
+<unbound method People.testObjectMethod>
+<bound method People.testObjectMethod of <__main__.People instance at 0x1068986c8>>
+<bound method classobj.testClassMethod of <class __main__.People at 0x1064b4770>>
+<bound method classobj.testClassMethod of <class __main__.People at 0x1064b4770>>
+<function testStaticMethod at 0x1064be1b8>
+<function testStaticMethod at 0x1064be1b8>
+
+类方法和对象方法其实是method对象，method对象可以进行绑定，静态方法是一个是function对象，创建完一个类之后（其实也是一个对象）包含有三个方法对象，未绑定的ObjectMethod,绑定的classMethod,static方法，创建一个对象的话会讲重新创建一个对象方法，并和现有的对象进行绑定，类方法和静态方法直接引用类中的方法
+
+定义一个方法实际上就是创建一个方法对象，并将其这个方法对象赋值给方法名称,甚至可以讲类中定义的方法重新赋值！但是执行不了，这也从另一个方面说明类中的方法就是一个变量
+
+
+
+class test:
+    def __init__(self):
+        self.list = []
+        print 'init'
+
+    def __str__(self):
+        return str(self.list)
+
+    def append(self, item):
+        self.list.append(item)
+
+
+def append(new_item, list=test()):
+    list.append(new_item)
+    print sys.getrefcount(list)
+    return list
+
+list = append('one')
+list = append('two')
+print append('three')
+
+执行结果：
+init
+['one', 'two', 'three']
+
+定义完append方法之后，其实是创建了一个方法对象，在创建方法对象的过程中，同时会创建一个test对象，这个test对象是在方法创建的时候创建，不是在方法执行的时候创建，每次执行append方法如果没有给list赋值，则list始终指向这个test对象
+
+
+迭代器和生成器
+
+可迭代对象，实现iter方法，并返回一个迭代器的对象称之为可迭代对象
+
+迭代器：内存保存一个状态，每次调用__next__()返回下一个的对象，称之为迭代器
+
+生成器：生成器是一种特殊的迭代器，相比于迭代器，生成器采用懒加载模式，迭代器返回的内容在开始迭代之前已经加载到内存，生成器的返回内存，在调用next方法之后才去计算或者获取，生成器只能迭代一次
+
+生成器函数：
+使用yield函数返回的函数称之为生成器函数
+
+def fn(n):
+    prev, cur = 0, 1
+    while (n > 0):
+        n = n -1
+        yield cur
+        prev, cur = cur, cur + prev
+
+生成器表达式：
+generator = (x for x in range(4))
+print generator
+print sum(generator)//6
+print sum(generator)//0 生成器只能遍历一次
+
+
+迭代器表达式：
+iteror = [x for x in range(4)]
+print iteror
+print sum(iteror)  //6
+print sum(iteror) //6
+
+
+python中的继承
+
+__init__不能理解构造方法，虽然用法和构造方法差不多，也可以说python中不存在构造方法一说，python中可以实现多继承
+
+属性的继承
+python作为动态语言，属性的继承说法比较牵强，继承只是在调用父类的方法前提下才实现，其实和继承没有关系
+Child 若没有调用super().__init__(),其实是没有name属性，而调用这个方法其实就是定义了一个自己的属性，和继承是没有一点关系的
+class Parent:
+    def __init__(self):
+        self.name = ""
+
+class Child(Parent):
+    def __init__(self):
+        pass
+
+child = Child()
+print child.name
+
+类属性的继承，其实是父类，子类，子类的实例都指向了一个对象，对类属性不能用实例对象去更新，若用子类去更新父类的类属性，其实是对子类创建了一个类属性，类属性的继承更像是一个链式作用域，自己没有就去一层一层往上找，不应该是继承，继承应该对类属性应该保证父类子类的一致性，而python作为动态语言不能保证这一点
+
+class Parent:
+    class_name = 'parent'
+    def __init__(self):
+        self.name = ""
+
+class Child(Parent):
+    def __init__(self):
+        pass
+
+child = Child()
+
+print Parent.class_name #paent
+print child.class_name #parent
+print Child.class_name #parent
+print Parent.class_name == Child.class_name # true
+
+
+实例方法继承
+
+一个类在内存中实际上一个对象，而类中的方法相当于这个对象中一个属性，实例方法对于类来说就是一个unbind method,没创建一个实例，会重新创建一个方法，并将这个方法与该实例进行bind，实例方法对于父类，子类来时指向是同一个unbind  method，对于实例来说指向是一个bind method，对于类方法来说，父类和子类分别指向一个bind method,而对于静态方法，父类，子类，实例指向的都是同一个方法对象
+
+class Parent:
+    def __init__(self):
+        pass
+    def test(self):
+        pass
+    @classmethod
+    def testClassMethod(cls):
+        pass
+
+    @staticmethod
+    def testStaticMethod():
+        pass
+
+class Child(Parent):
+    def __init__(self):
+        pass
+
+
+child = Child()
+
+print Child.test == Parent.test #true
+print child.test == Child.test #fasle
+
+print Child.testClassMethod == Parent.testClassMethod #fasle
+print child.testClassMethod == Child.testClassMethod #true
+
+print Child.testStaticMethod == Parent.testStaticMethod #true
+print child.testStaticMethod == Parent.testStaticMethod #true
+
+
+
+__new__方法
+创建对象分为两种方式一种是老式方法，class Parent() 这种方法创建实例不会调用__new__方法，另一种是新式方法
+class Parent(object) 这种方式会调用__new__方法，__new__方法必须有返回值，需用调用object的__new__方法创建一个实例
+
+
+异常处理
+相比与java的异常处理，python的异常处理增加了else关键字，意思为若没有发生异常则执行else中的操作，实际上也没有多大的用处，python的异常处理过程如下
+try:
+	# do something
+except Exception as exception:
+	# do error something
+else:
+	# do something
+finnaly:
+	# do something
+
+
+module&package
+简单的说module就是一个python文件，package是一个包含__init__.py的文件夹，import module的搜索路径是首先是当前目录，然后是是shell中PYTHONPATH的目录，然后就是系统中的默认目录
+
+module 
+import module 导入模块之后使用该module中方法，类，变量都需要加上module的名称
+from module import * 导入模块之后，使用该module中的方法，类，变量不需要加上module的名称
+在module 中添加__all__ dict可以指定使用from module import * 中可以导入的变量，类，方法等
+当时对于import module则是没有作用的
+
+package 
+当一个文件夹中包含__init__.py文件的时候，则这个文件夹可以看作是一个package，package可以看作是一个特殊的包
+当包被导入的时候，这个__init__.py文件就会被导入，因此在这个文件中导入的模块也将会被导入, 在__init__.py中使用import 的方法
+，还有一种方式是在__init__.py中定义__all__变量来控制导入的模块，但是这种方式的话只能通过import package from * 来导入不然的话是不能说使用package中的module
+
+
+# todo 
+调用父类的几种方法
+python 打包发布
+
+
+
+
+
+
+
+
+
+
+
