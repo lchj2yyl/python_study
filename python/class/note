@@ -201,11 +201,14 @@ from module import * 导入模块之后，使用该module中的方法，类，�
 
 package 
 当一个文件夹中包含__init__.py文件的时候，则这个文件夹可以看作是一个package，package可以看作是一个特殊的包
-当包被导入的时候，这个__init__.py文件就会被导入，因此在这个文件中导入的模块也将会被导入, 在__init__.py中使用import 的方法
-，还有一种方式是在__init__.py中定义__all__变量来控制导入的模块，但是这种方式的话只能通过import package from * 来导入不然的话是不能说使用package中的module
+当包被导入的时候，这个__init__.py文件就会被导入，因此在这个文件中导入的模块也将会被导入, 在__init__.py中使用import 的方法, 这种方式导入的包只能通过from package import * 来导入，
+，还有一种方式是在__init__.py使用__all__导入这种方式可以通过from package import * ,import package
+两种方式
 
-
-# todo 
+        import package  from package import *
+__all__     no                  yes            
+import      yes                 yes
+# todo      
 调用父类的几种方法
 python 打包发布
 

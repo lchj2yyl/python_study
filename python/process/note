@@ -1,3 +1,36 @@
 fork() 函数
 fork函数会创建一个子进程，生成的子进程是对父进程的一次备份，包含父进程的所有数据，包括执行的堆栈，但是数据是相互隔离的，父进程中fork函数会返回子进程的进程号，子进程则返回0，同时父进程和子进程都会执行fork()之后的代码
 
+Pool 中的阻塞和非阻塞 是针对进程来讲，阻塞的话相当于pool中只有一个进程在执行
+进程：是系统分配资源和调度的单位
+线程：是cpu执行和调度的单位，线程共享进程所有资源
+
+python创建进程两种方式，1，fork() 2.Process
+childProcess = Process(target=run_in_child_process, args=('child process ',))如果不指名target默认会执行run方法，其实就是在run方法中执行target方法
+
+进程池：Pool
+pool.apply(task, args=('task' + str(i+1),),)这种方式为同步执行，该进程执行完毕会返回结果，IPC会通过管道来实现，同时在进行同步调用的时候会释放GIL，使其他线程可以执行，添加
+
+进程间数据同步，使用Queue来实现，注意进程间同步和进程池中进程间同步使用不同的Queue
+
+线程
+threading.Thread
+python的中的多线程在cpython解释器上同一时刻只能有一个线程在执行，存在一个全局的锁(GPL),线程间同步可以使用threading.Lock()来创建一个互斥锁，来确保多线上数据不同步问题，使用local()(相当于java中ThreadLocal对象)
+
+GIL(Global Interperter Lock) GIL并不是python的一个特性，他只存在于Cpython解释器上，而其他解释器JPython不存在GIL，GIL其实一个粗粒度的锁，任何线程在执行之前必须获取该锁，这样会造成即使在python中使用多线程，那么同一时刻也只能有一个线程在执行
+存在原因：
+官方解释如下：
+
+In CPython, the global interpreter lock, or GIL, is a mutex that prevents multiple native threads from executing Python bytecodes at once. This lock is necessary mainly because CPython’s memory management is not thread-safe. (However, since the GIL exists, other features have grown to depend on the guarantees that it enforces
+一方面是Cpython内存管理不是线程安全的，另一方面：越来越多三方库开发者接受这一现实，并依赖这一现实，去除CPython的成本越来越高
+
+优化：
+线程分为两种：一种是cpu密集型任务，另一种为IO密集型任务，对于cpu密集型任务，单线程因为GIL存在执行效率会比效率比较高，在单核cpu上多线程会增加cpu切换线程的成本，在多核cpu上，多线程会存在获取到时间片但是没有获取GIL锁的情况，这种情况下CPU会白白浪费，对于这种cpu密集型任务可以通过进程池，放到不同的进程中执行。对于IO密集型任务，多线程的效率要高于单线程，原因为:线程遇到IO操作，会释放GIL，供其他线程使用
+
+
+每执行100行字节码就会释放GIL，对于解释器控制不了代码，如调用C模块，这样会一直持有GIL，在C模块返回之前不会执行任何python代码
+
+
+
+
+other features have grown to depend on the guarantees that it enforces.)
