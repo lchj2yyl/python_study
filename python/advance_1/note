@@ -1,0 +1,81 @@
+
+
+Because generator-iterators begin execution at the top of the
+generator's function body, there is no yield expression to receive
+a value when the generator has just been created.  Therefore,
+calling send() with a non-None argument is prohibited when the
+generator iterator has just started, and a TypeError is raised if
+this occurs (presumably due to a logic error of some kind).  Thus,
+before you can communicate with a coroutine you must first call
+next() or send(None) to advance its execution to the first yield
+expression.
+
+
+next() 相当于 send(None),第一次使用generator必须传递一个none，因为没有yield来接受这个参数
+
+在yield返回之前是不允许在此调用send，尤其在两个生成器相互调用的情况下
+def fa_gen():
+    data = yield
+    print 'fa receive %s' % data
+    fb.send(data * 2)
+
+
+def fb_gen():
+    data = yield
+    print 'fb receiver %s' % data
+    fa.send(data * 2)
+
+
+throw,相当于在yield的处抛出一个异常，这个可以用来强制生成器推出
+def gen_throw():
+    data = yield
+    print data
+
+    try:
+        yield data
+    except Exception as e:
+        yield str(e)
+
+close 方法用来关闭生成器
+
+装饰器
+
+def calculate_function_run_time(fun):
+    def inner():
+    	fun()
+    return inner
+@calculate_function_run_time
+def fun():
+	do something
+
+@其实是一个语法糖，@calculate_function_run_time 相当于 fun = calculate_function_run_time(fun),即修改了fun变量的指向，之后调用fun会直接调用inner方法，
+
+def calculate_function_run_time_with_desc(desc='none'):
+    def calculate_function_run_time(fun):
+        def inner():
+        	fun()
+        return inner
+    return calculate_function_run_time
+@calculate_function_run_time_with_desc('fun_a')
+def fun_a():
+    time.sleep(3)
+
+带有参数的装饰器需要在装饰器外面重新增加一层
+
+@calculate_function_run_time_with_desc('fun_a') 相当于alculate_function_run_time_with_desc('fun_a')(fun) 这样其实是多加了一层调用层级，最终fun指向inner函数
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
