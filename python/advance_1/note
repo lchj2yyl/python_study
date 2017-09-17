@@ -64,6 +64,25 @@ def fun_a():
 
 @calculate_function_run_time_with_desc('fun_a') 相当于alculate_function_run_time_with_desc('fun_a')(fun) 这样其实是多加了一层调用层级，最终fun指向inner函数
 
+类装饰器
+一个类实现了__call__方法，就可以直接调用了，类装饰器就是把创建一个对象并把当前方法初始化时候传递进去
+
+
+class DoctorClass(object):
+    def __init__(self, fun):
+        print 'Doctor init'
+        self.fun = fun
+        print 'Doctor init end'
+
+    def __call__(self, *args, **kwargs):
+        print '__call__'
+        self.fun()
+
+
+@DoctorClass
+def test():
+    print 'this is test'
+
 
 
 
