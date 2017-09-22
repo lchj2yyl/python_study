@@ -19,3 +19,5 @@ str_test = '你好好'
 str_test = str_test.decode('gbk')
 print str_test
 
+
+
