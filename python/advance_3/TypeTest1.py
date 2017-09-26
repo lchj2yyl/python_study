@@ -49,3 +49,4 @@ people = People()
 people.class_method()
 people.static_method()
 print people.type
+type
