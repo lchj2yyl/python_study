@@ -24,6 +24,7 @@
     <SUITE FILE_PATH="coverage/python$GeneratorTest2.coverage" NAME="GeneratorTest2 Coverage Results" MODIFIED="1505635599171" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../python/advance_1" />
     <SUITE FILE_PATH="coverage/class$method.coverage" NAME="method Coverage Results" MODIFIED="1504946957875" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/python$ThreadTest5.coverage" NAME="ThreadTest5 Coverage Results" MODIFIED="1505558941442" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../python/process" />
+    <SUITE FILE_PATH="coverage/python$retest.coverage" NAME="retest Coverage Results" MODIFIED="1506528539125" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../python/re" />
     <SUITE FILE_PATH="coverage/python$TypeTest.coverage" NAME="TypeTest Coverage Results" MODIFIED="1505656293371" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../python/advance_3" />
     <SUITE FILE_PATH="coverage/python$ThreadTest2.coverage" NAME="ThreadTest2 Coverage Results" MODIFIED="1505554818642" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../python/process" />
     <SUITE FILE_PATH="coverage/python$DoctorTest2.coverage" NAME="DoctorTest2 Coverage Results" MODIFIED="1505632686547" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../python/advance_1" />
@@ -41,9 +42,10 @@
     <SUITE FILE_PATH="coverage/class$PoolTest.coverage" NAME="PoolTest Coverage Results" MODIFIED="1504967039999" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/process" />
     <SUITE FILE_PATH="coverage/python$MultiProcessTest2.coverage" NAME="MultiProcessTest2 Coverage Results" MODIFIED="1505574230624" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../python/process" />
     <SUITE FILE_PATH="coverage/python$DoctorTest3.coverage" NAME="DoctorTest3 Coverage Results" MODIFIED="1505634766985" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../python/advance_1" />
+    <SUITE FILE_PATH="coverage/python$get_text_from_html.coverage" NAME="get_text_from_html Coverage Results" MODIFIED="1506528297390" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../python/re" />
     <SUITE FILE_PATH="coverage/python$closeure.coverage" NAME="closeure Coverage Results" MODIFIED="1505640316568" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../python/advance_1" />
     <SUITE FILE_PATH="coverage/python$BuildInAttr.coverage" NAME="BuildInAttr Coverage Results" MODIFIED="1506439650559" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../python/advance_4" />
-    <SUITE FILE_PATH="coverage/python$BuildFunctionTest.coverage" NAME="BuildFunctionTest Coverage Results" MODIFIED="1506440592674" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../python/advance_4" />
+    <SUITE FILE_PATH="coverage/python$BuildFunctionTest.coverage" NAME="BuildFunctionTest Coverage Results" MODIFIED="1506442054168" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../python/advance_4" />
     <SUITE FILE_PATH="coverage/python$ThreadTest4.coverage" NAME="ThreadTest4 Coverage Results" MODIFIED="1505556742005" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../python/process" />
     <SUITE FILE_PATH="coverage/python$SlotTest.coverage" NAME="SlotTest Coverage Results" MODIFIED="1506440019857" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../python/advance_4" />
     <SUITE FILE_PATH="coverage/python$SlopTest.coverage" NAME="SlopTest Coverage Results" MODIFIED="1505644079947" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../python/advance_2" />
@@ -58,101 +60,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="__builtin__.py" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/Library/Caches/PyCharm2017.2/python_stubs/661428859/__builtin__.py">
+      <file leaf-file-name="retest.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/../python/re/retest.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-27">
-              <caret line="476" column="4" lean-forward="false" selection-start-line="476" selection-start-column="4" selection-end-line="476" selection-end-column="4" />
+            <state relative-caret-position="347">
+              <caret line="96" column="46" lean-forward="false" selection-start-line="96" selection-start-column="46" selection-end-line="96" selection-end-column="46" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TypeTest2.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../python/advance_3/TypeTest2.py">
+      <file leaf-file-name="test.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../python/re/test.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="24" column="8" lean-forward="false" selection-start-line="24" selection-start-column="8" selection-end-line="24" selection-end-column="8" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TypeTest3.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../python/advance_3/TypeTest3.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-269">
-              <caret line="0" column="46" lean-forward="false" selection-start-line="0" selection-start-column="46" selection-end-line="0" selection-end-column="46" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TypeTest4.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../python/advance_3/TypeTest4.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="12" column="37" lean-forward="true" selection-start-line="12" selection-start-column="37" selection-end-line="12" selection-end-column="37" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BuildInAttr.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../python/advance_4/BuildInAttr.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="132">
-              <caret line="6" column="14" lean-forward="true" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SlotTest.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../python/advance_4/SlotTest.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="242">
-              <caret line="11" column="18" lean-forward="true" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BuildFunctionTest.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/../python/advance_4/BuildFunctionTest.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TypeTest1.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../python/advance_3/TypeTest1.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="303">
-              <caret line="51" column="1" lean-forward="false" selection-start-line="51" selection-start-column="1" selection-end-line="51" selection-end-column="1" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="note" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../python/advance_1/note">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1481">
+            <state relative-caret-position="-1345">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DoctorTest4.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../python/advance_1/DoctorTest4.py">
+      <file leaf-file-name="re.py" pinned="false" current-in-tab="false">
+        <entry file="file:///System/Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/re.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="12" column="11" lean-forward="true" selection-start-line="12" selection-start-column="11" selection-end-line="12" selection-end-column="11" />
+            <state relative-caret-position="3033">
+              <caret line="163" column="4" lean-forward="false" selection-start-line="163" selection-start-column="4" selection-end-line="163" selection-end-column="4" />
               <folding />
             </state>
           </provider>
@@ -180,9 +112,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/process/note" />
-        <option value="$PROJECT_DIR$/process/PoolTest.py" />
-        <option value="$PROJECT_DIR$/../python/class/class_test.py" />
         <option value="$PROJECT_DIR$/../python/module/MANIFEST" />
         <option value="$PROJECT_DIR$/../python/module/module2/__init__.py" />
         <option value="$PROJECT_DIR$/../python/module/setup.py" />
@@ -231,6 +160,9 @@
         <option value="$PROJECT_DIR$/../python/advance_4/BuildInAttr.py" />
         <option value="$PROJECT_DIR$/../python/advance_4/SlotTest.py" />
         <option value="$PROJECT_DIR$/../python/advance_4/BuildFunctionTest.py" />
+        <option value="$PROJECT_DIR$/../python/re/re.py" />
+        <option value="$PROJECT_DIR$/../python/re/get_text_from_html.py" />
+        <option value="$PROJECT_DIR$/../python/re/retest.py" />
       </list>
     </option>
   </component>
@@ -272,12 +204,7 @@
             <path>
               <item name="python" type="b2602c69:ProjectViewProjectNode" />
               <item name="python" type="462c0819:PsiDirectoryNode" />
-              <item name="advance_4" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="python" type="b2602c69:ProjectViewProjectNode" />
-              <item name="python" type="462c0819:PsiDirectoryNode" />
-              <item name="blog" type="462c0819:PsiDirectoryNode" />
+              <item name="re" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -293,6 +220,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/../python/re" />
       <recent name="$PROJECT_DIR$/../python/advance_1" />
       <recent name="$PROJECT_DIR$/../python/module/module1/module3" />
       <recent name="$PROJECT_DIR$/../python/module/test" />
@@ -317,7 +245,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.BuildFunctionTest">
+  <component name="RunManager" selected="Python.retest">
     <configuration name="BuildFunctionTest" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -368,42 +296,6 @@
       <module name="python" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../python/advance_4/SlotTest.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-    </configuration>
-    <configuration name="TypeTest3" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../python/advance_3" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="python" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../python/advance_3/TypeTest3.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-    </configuration>
-    <configuration name="TypeTest4" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../python/advance_3" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="python" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../python/advance_3/TypeTest4.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -549,20 +441,56 @@
       <option name="_new_target" value="&quot;&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
     </configuration>
+    <configuration name="get_text_from_html" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../python/re" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="python" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../python/re/get_text_from_html.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
+    <configuration name="retest" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../python/re" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="python" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../python/re/retest.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.TypeTest3" />
-      <item index="1" class="java.lang.String" itemvalue="Python.TypeTest4" />
-      <item index="2" class="java.lang.String" itemvalue="Python.BuildInAttr" />
-      <item index="3" class="java.lang.String" itemvalue="Python.SlotTest" />
-      <item index="4" class="java.lang.String" itemvalue="Python.BuildFunctionTest" />
+      <item index="0" class="java.lang.String" itemvalue="Python.BuildInAttr" />
+      <item index="1" class="java.lang.String" itemvalue="Python.SlotTest" />
+      <item index="2" class="java.lang.String" itemvalue="Python.BuildFunctionTest" />
+      <item index="3" class="java.lang.String" itemvalue="Python.retest" />
+      <item index="4" class="java.lang.String" itemvalue="Python.get_text_from_html" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.BuildFunctionTest" />
-        <item index="1" class="java.lang.String" itemvalue="Python.SlotTest" />
-        <item index="2" class="java.lang.String" itemvalue="Python.BuildInAttr" />
-        <item index="3" class="java.lang.String" itemvalue="Python.TypeTest4" />
-        <item index="4" class="java.lang.String" itemvalue="Python.TypeTest3" />
+        <item index="0" class="java.lang.String" itemvalue="Python.retest" />
+        <item index="1" class="java.lang.String" itemvalue="Python.get_text_from_html" />
+        <item index="2" class="java.lang.String" itemvalue="Python.BuildFunctionTest" />
+        <item index="3" class="java.lang.String" itemvalue="Python.SlotTest" />
+        <item index="4" class="java.lang.String" itemvalue="Python.BuildInAttr" />
       </list>
     </recent_temporary>
   </component>
@@ -636,52 +564,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../python/process/PoolTest.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#32#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../python/process/QueenTest.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="18" column="12" lean-forward="true" selection-start-line="18" selection-start-column="12" selection-end-line="18" selection-end-column="12" />
-          <folding>
-            <element signature="e#0#57#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../python/process/ProcessTest.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="550">
-          <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../python/process/ThreadTest1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="14" column="18" lean-forward="true" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
-          <folding>
-            <element signature="e#0#16#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../python/process/ThreadTest2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="3" column="10" lean-forward="false" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../python/process/ThreadTest3.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="400">
@@ -1040,6 +922,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/../python/advance_4/BuildFunctionTest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$USER_HOME$/Library/Caches/PyCharm2017.2/python_stubs/661428859/__builtin__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-27">
@@ -1048,10 +938,42 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../python/advance_4/BuildFunctionTest.py">
+    <entry file="file://$PROJECT_DIR$/../python/re/re.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+        <state relative-caret-position="22">
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../python/re/get_text_from_html.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="6" column="18" lean-forward="true" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///System/Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/re.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3033">
+          <caret line="163" column="4" lean-forward="false" selection-start-line="163" selection-start-column="4" selection-end-line="163" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../python/re/test.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1345">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../python/re/retest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="347">
+          <caret line="96" column="46" lean-forward="false" selection-start-line="96" selection-start-column="46" selection-end-line="96" selection-end-column="46" />
           <folding />
         </state>
       </provider>
