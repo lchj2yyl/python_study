@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<ul>
+<h1>This is a show page</h1>
+{% for book in list %}
+    <li>{{book.title}} {{ book.pub_date }} {{ book.author.name }}</li>
+{% endfor %}
+</ul>
+</body>
+</html>

@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>this is index page</h1>
+<ul>
+{% for author in list %}
+    <li><a href="show/book/{{ author.id }}">{{ author.name }} {{ book.age }} {{ author.sex }}</a></li>
+{% endfor %}
+</ul>
+</body>
+</html>
