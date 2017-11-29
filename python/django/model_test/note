@@ -1,0 +1,11 @@
+数据库操作：
+创建数据库：create database model_test
+删除数据库：drop database model_test
+进入数据库：use model_test
+查看表: show tables
+查看列：desc book_info
+插入: insert into book_info(title, content) values('abc', 'abc'),('cef','cef');
+管理器：用于model与数据库进行交互，一个对象至少有个一个管理器，管理器可以自定义
+查询：
+F对象：F对象多个列之间进行数据比较
+Q对象：Q对象用于多个查询条件

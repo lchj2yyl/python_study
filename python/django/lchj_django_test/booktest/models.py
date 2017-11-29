@@ -6,6 +6,8 @@ class AuthorInfo(models.Model):
     age = models.IntegerField()
     sex = models.IntegerField(default=0)
 
+    def __init__(self, *args, **kwargs):
+        super(AuthorInfo, self).__init__(*args, **kwargs)
 
 
 class BookInfo(models.Model):
